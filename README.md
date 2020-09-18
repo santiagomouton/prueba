@@ -30,10 +30,8 @@ int factorial(int number) {
 
                 
   Y por GDB:              
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Program received signal SIGSEGV, Segmentation fault.  
-  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; main () at debugg2.c:10  
-  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10	    temp[3]='F';  
-
+ ![debug2GDB](https://github.com/santiagomouton/prueba/blob/master/debug2GDB.png)  
+ 
   GDB nos seniala la linea 10, como una violacion de segmento o memoria; al parecer estamos accediendo a una memoria que no debemos acceder, osea no valida. ESto se da porque estamos queriendo escribir en un espacio de memoria donde ya esta definida cuando iniciamos el puntero. Esto lo arreglamos definiendo la variable temp como un arreglo de char y no como un puntero a caracteres, es decir:  
    
   **char temp[5] = "Paras"** y no como **char** ***temp = "Paras"**  
