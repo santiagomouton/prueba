@@ -24,9 +24,9 @@ int factorial(int number) {
   
 **Segundo Programa**  
   No hay errores de sintaxis. Al compilar el programa y luego ejecutarlo se genera core.  
-  Vemos el coredump generado y tambien abrimos el GDB con el comando coredumpctl info, y tenemos el siguiente mensaje por parte del paquete core:
+  Vemos el coredump generado y tambien abrimos el GDB con el comando coredumpctl info, y tenemos el siguiente mensaje por parte del paquete core:  
   
-! [coredumperrorpuntero] (https://github.com/ICOMP-UNC/2020soi-laboratorio-3-santiagomouton/blob/santiagomouton-patch-1/coredumperrorpuntero.png)
+! [coredumperrorpuntero] (https://github.com/santiagomouton/prueba/blob/master/coredumperrorpuntero.png)
                 
   Y por GDB:              
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Program received signal SIGSEGV, Segmentation fault.
